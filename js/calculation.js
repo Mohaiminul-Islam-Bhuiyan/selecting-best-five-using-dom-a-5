@@ -12,8 +12,6 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 
     else{
     const playerExpense = perPlayerCost * totalPlayers;
-    const playerExpenseInitial = getTextElementValueById('player-expense');
-    
     setTextElementValueById('player-expense', playerExpense);
 }
 })
@@ -31,10 +29,6 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     }
     else{
     const total = playerExpenseValue + managerCost + coachCost;
-
-
-    const initialTotal = getTextElementValueById('total');
-
     setTextElementValueById('total', total);
 }
 })
