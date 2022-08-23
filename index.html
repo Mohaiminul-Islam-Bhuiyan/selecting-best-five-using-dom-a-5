@@ -42,7 +42,7 @@
                             <div class="card-body bg-black">
                                 <h5 class="card-title">Lionel Messi</h5>
                                 <p class="card-text text-muted">36 Goals</p>
-                                <button class="btn btn-primary px-5" type="submit">SELECT</button>
+                                <button onclick="selectPlayer(this)" class="btn btn-primary px-5" type="submit">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                             <div class="card-body bg-black">
                                 <h5 class="card-title">Neymar Jr</h5>
                                 <p class="card-text text-muted">36 Goals</p>
-                                <button class="btn btn-primary px-5" type="submit">SELECT</button>
+                                <button onclick="selectPlayer(this)" class="btn btn-primary px-5" type="submit">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <div class="card-body bg-black">
                                 <h5 class="card-title">Kylian Mbappé</h5>
                                 <p class="card-text text-muted">36 Goals</p>
-                                <button class="btn btn-primary px-5" type="submit">SELECT</button>
+                                <button onclick="selectPlayer(this)" class="btn btn-primary px-5" type="submit">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                             <div class="card-body bg-black">
                                 <h5 class="card-title">Vítor Machado</h5>
                                 <p class="card-text text-muted">36 Goals</p>
-                                <button class="btn btn-primary px-5" type="submit">SELECT</button>
+                                <button onclick="selectPlayer(this)" class="btn btn-primary px-5" type="submit">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                             <div class="card-body bg-black">
                                 <h5 class="card-title">Sergio Ramos</h5>
                                 <p class="card-text text-muted">36 Goals</p>
-                                <button class="btn btn-primary px-5" type="submit">SELECT</button>
+                                <button onclick="selectPlayer(this)" class="btn btn-primary px-5" type="submit">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                             <div class="card-body bg-black">
                                 <h5 class="card-title">Renato Sanches</h5>
                                 <p class="card-text text-muted">36 Goals</p>
-                                <button class="btn btn-primary px-5" type="submit">SELECT</button>
+                                <button onclick="selectPlayer(this)" class="btn btn-primary px-5" type="submit">SELECT</button>
                             </div>
                         </div>
                     </div>
@@ -107,10 +107,18 @@
             <section class="col-3">
                 <!-- selection  -->
                 <div>
-
+                    <h1>Selected - v</h1>
+                    <table class="table text-white">
+                        <thead>
+                        
+                        </thead>
+                        <tbody id="display-selected-players">
+                          
+                        </tbody>
+                      </table>
                 </div>
                 <!-- expense calculation  -->
-                <div class="border ">
+                <div class="border mt-5">
                     <div>
                         <h1>Budget</h1>
                         <p>Per Player</p>
@@ -118,7 +126,7 @@
                         <button class="btn btn-primary mt-2" type="submit">Calculate</button>
                     </div>
                     <div>
-                        <p>Player Expense:   $<span>5000</span></p>
+                        <p>Player Expense: $<span>5000</span></p>
                         <p>Manager</p>
                         <input type="number" name="" id="">
                         <p>Coach</p>
