@@ -122,18 +122,18 @@
                     <div>
                         <h1>Budget</h1>
                         <p>Per Player</p>
-                        <input type="number">
-                        <button class="btn btn-primary mt-2" type="submit">Calculate</button>
+                        <input id="per-player-cost" type="number">
+                        <button id="btn-calculate" class="btn btn-primary mt-2" type="submit">Calculate</button>
                     </div>
                     <div>
-                        <p>Player Expense: $<span>5000</span></p>
+                        <p>Player Expense: $<span id="player-expense">000</span></p>
                         <p>Manager</p>
-                        <input type="number" name="" id="">
+                        <input type="number" name="" id="manager-cost">
                         <p>Coach</p>
-                        <input type="number" name="" id="">
+                        <input type="number" name="" id="coach-cost">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-2">Calculate Total</button>
-                    <p>Total: $<span>1100</span></p>
+                    <button id="btn-calculate-total" type="submit" class="btn btn-primary mt-2">Calculate Total</button>
+                    <p>Total: $<span id="total">000</span></p>
                 </div>
             </section>
         </section>
@@ -145,6 +145,8 @@
 
 
     <script src="js/app.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 
 </html>

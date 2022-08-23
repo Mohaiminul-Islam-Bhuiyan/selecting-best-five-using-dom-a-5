@@ -23,9 +23,7 @@ function displaySelection(allPlayers){
 
 
 function selectPlayer(element){
-    // console.log(element.parentNode.children[0].innerText)
     const playerName = element.parentNode.children[0].innerText;
-    // console.log(playerName)
 
     if (selectedPlayersArray.length > 4){
         alert('only 5 players can be added')
@@ -33,8 +31,6 @@ function selectPlayer(element){
     else{
         selectedPlayersArray.push(playerName);
     }
-    // selectedPlayersArray.push(playerName);
-    // console.log(selectedPlayers)
 
     element.disabled = true;
 
