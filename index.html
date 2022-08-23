@@ -122,15 +122,15 @@
                     <div>
                         <h1>Budget</h1>
                         <p>Per Player</p>
-                        <input id="per-player-cost" type="number">
+                        <input id="per-player-cost" type="number" min="1">
                         <button id="btn-calculate" class="btn btn-primary mt-2" type="submit">Calculate</button>
                     </div>
                     <div>
                         <p>Player Expense: $<span id="player-expense">000</span></p>
                         <p>Manager</p>
-                        <input type="number" name="" id="manager-cost">
+                        <input type="number" name="" id="manager-cost" min="1">
                         <p>Coach</p>
-                        <input type="number" name="" id="coach-cost">
+                        <input type="number" name="" id="coach-cost" min="1">
                     </div>
                     <button id="btn-calculate-total" type="submit" class="btn btn-primary mt-2">Calculate Total</button>
                     <p>Total: $<span id="total">000</span></p>
