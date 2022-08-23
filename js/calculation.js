@@ -15,8 +15,11 @@ document.getElementById('btn-calculate').addEventListener('click',function(){
 document.getElementById('btn-calculate-total').addEventListener('click', function(){
     const managerCost = getInputValueById('manager-cost');
     const coachCost = getInputValueById('coach-cost');
+    const playerExpenseValue = getTextElementValueById('player-expense')
     console.log(managerCost, coachCost)
 
-    
-    const total = getTExtElementValueById('total')
+    const total = playerExpenseValue + managerCost + coachCost;
+    const initialTotal = getTextElementValueById('total');
+
+    setTextElementValueById('total', total);
 })
